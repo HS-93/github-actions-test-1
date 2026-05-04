@@ -1,0 +1,5 @@
+python_app/htmlcov
+python_app/.tox
+python_app/.coverage
+python_app/**/__pycache__
+.idea
