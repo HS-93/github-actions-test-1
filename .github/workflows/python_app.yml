@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+  schedule:
+    # 日本時間で毎週木曜日の9時に定期実行
+    - cron: '0 0 * * thu'
 
 jobs:
   test:
