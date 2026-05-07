@@ -5,8 +5,8 @@ on:
     branches:
       - main
   schedule:
-    # 日本時間で毎週木曜日の9時に定期実行
-    - cron: '0 0 * * thu'
+    # 日本時間で毎週金曜日の9時に定期実行
+    - cron: '0 0 * * fri'
 
 jobs:
   test:
