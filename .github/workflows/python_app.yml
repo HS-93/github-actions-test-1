@@ -1,12 +1,15 @@
-name: python app workflow
+name: "python app workflow"
 
 on:
   push:
     branches:
       - main
-  schedule:
-    # 日本時間で毎週土曜日の9時に定期実行
-    - cron: '0 0 * * sat'
+    paths:
+      - 'python_app/**'
+      - '.github/workflows/python_app.yml'
+#  schedule:
+#    # 日本時間で毎週土曜日の9時に定期実行
+#    - cron: '0 0 * * sat'
 
 jobs:
   test:
